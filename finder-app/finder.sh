@@ -24,4 +24,3 @@ done
 
 echo "The number of files are $fCounter"
 echo "and the number of matching lines are $strCounter"
-exit 0 # Success!

@@ -28,4 +28,3 @@ else
     touch $file 
     echo $writestr > $file # Overwrite the file's contents
 fi
-#exit 0 # Success!
