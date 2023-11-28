@@ -18,6 +18,7 @@ then
 		echo "Using default value ${NUMFILES} for number of files to write"
 	else
 		NUMFILES=$1
+		WRITESTR=$2
 	fi	
 else
 	NUMFILES=$1
@@ -64,6 +65,7 @@ rm -rf /tmp/aeld-data
 
 set +e
 echo ${OUTPUTSTRING} | grep "${MATCHSTR}"
+
 if [ $? -eq 0 ]; then
 	echo "success"
 	exit 0
